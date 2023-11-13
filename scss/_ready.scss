@@ -1,0 +1,48 @@
+.ready {
+    padding-top: 76px;
+    padding-bottom: 76px;
+    background-color: #F67E7E;
+    background-image: url("../img/bottom.png");
+    background-position: left 0 bottom 0;
+    background-repeat: no-repeat;
+
+    .ready__list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        p {
+            color: #012F34;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 48px;
+        }
+
+        button {
+            width: 153px;
+            height: 48px;
+            color: #012F34;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 28px;
+            border-radius: 24px;
+            border: 2px solid #012F34;
+            background-color: #F67E7E;
+        }
+    }
+}
+@media (max-width:390px) {
+    .ready__list{
+        display: block;
+        flex-direction: column;
+    }
+    .ready__text{
+        max-width: 327px;
+        text-align: center;
+    }
+    .ready__items{
+        padding-top: 24px;
+    }
+}

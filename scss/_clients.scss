@@ -1,0 +1,41 @@
+.clients {
+    background-color: #012F34;
+    background-image: url("../img/left2.svg");
+    background-repeat: no-repeat;
+
+    .clients__title{
+        color: #FFF;
+        text-align: center;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px;
+        padding-top: 140px;
+    }
+
+    .clients__list {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-bottom: 249px;
+    }
+    .clients__item{
+        padding-top: 70px;
+        p{
+            color: white;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+    }
+
+}
+@media (max-width:390px) {
+    .clients__list{
+        display: block;
+        flex-direction: column;
+    }
+    .clients{
+        background-position: left -100px, bottom right;
+    }
+}
